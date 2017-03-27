@@ -1,8 +1,6 @@
 ﻿var ZylinderDeckel2 : GameObject;
 var StoodOn : int;
 
-var qwertz : int;
-
 
 function OnTriggerEnter (col : Collider){
 	StoodOn = 1;
@@ -18,7 +16,6 @@ function Update(){
 			//GameObject.find("FPSController").GetComponent("FirstPersonController").enabled=false;
 			transform.position = Vector3(0, -1000, 0);
 			WaitingforPipe();
-			qwertz = 1;
 		}
 	}
 }
