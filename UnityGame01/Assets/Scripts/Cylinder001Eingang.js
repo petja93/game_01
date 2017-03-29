@@ -2,7 +2,7 @@
 var StoodOn : int;
 
 var MainCam : GameObject;
-var SecondCam: GameObject;
+var SecondCam : GameObject;
 var MainPlayer : GameObject;
 
 
@@ -28,8 +28,9 @@ function WaitingforPipe(){
 	ZylinderDeckel2.GetComponent("Animator").enabled = true;
 	yield WaitForSeconds(2);
 	ZylinderDeckel2.GetComponent("Animator").enabled = false;
-	SecondCam.setActive(true);
-	MainCam.setActive(false);
-	MainPlayer.transform.position = Vector3(14.49, -19.13, 0.5);
+	SecondCam.SetActive(true);
+	MainCam.SetActive(false);
+	MainPlayer.transform.position = Vector3(14, -19, 0.5);
+	//MainPlayer.transform.position = Vector3(11, -17, 0.5);
 	//GameObject.find("FPSController").GetComponent("FirstPersonController").enabled=true;
 }
