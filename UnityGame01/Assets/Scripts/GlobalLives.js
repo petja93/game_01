@@ -5,4 +5,13 @@ var LifeTextBox : GameObject;
 function Update(){
 	InternalLives = LivesAmount;
 	LifeTextBox.GetComponent.<Text>().text = "" + InternalLives;
+
+	if(InternalLives ==0){
+		GameOverScene();
+	}
+}
+
+function GameOverScene(){
+	yield WaitForSeconds(2.9);
+		Application.LoadLevel(3);
 }
