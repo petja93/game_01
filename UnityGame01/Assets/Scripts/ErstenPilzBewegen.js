@@ -8,7 +8,8 @@ function Update(){
 }
 
 function BeendeAnimation(){
-	yield WaitForSeconds(0.5);
-	DerPilz.SetActive(false);
+	yield WaitForSeconds(1);
 	AktuellerPilz.SetActive(true);
+	DerPilz.SetActive(false);
+
 }

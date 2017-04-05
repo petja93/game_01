@@ -5,6 +5,6 @@ var Pilz : GameObject;
 function OnTriggerEnter(col: Collider){
 	FragezeichenBlock.SetActive(false);
 	NormalerBlock.SetActive(true);
-	yield WaitForSeconds(1);
+	yield WaitForSeconds(0.2);
 	Pilz.SetActive(true);
 }
