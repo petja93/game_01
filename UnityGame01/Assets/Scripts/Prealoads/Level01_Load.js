@@ -1,4 +1,4 @@
 ﻿function Start(){
-	yield WaitForSeconds(1);
+	yield WaitForSeconds(5);
 	Application.LoadLevel(1);
 }
